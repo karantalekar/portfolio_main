@@ -1,0 +1,45 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gold metallic gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4c2"></stop>
+      <stop offset="20%" stop-color="#f6d365"></stop>
+      <stop offset="50%" stop-color="#d4af37"></stop>
+      <stop offset="80%" stop-color="#b8962e"></stop>
+      <stop offset="100%" stop-color="#fff0a5"></stop>
+    </linearGradient>
+
+    <!-- Shine effect -->
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+
+    <!-- Shadow -->
+    <filter id="goldShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.4"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Dark background for contrast -->
+  <rect x="20" y="20" width="260" height="260" rx="40" fill="#0b0b0b"></rect>
+
+  <!-- Gold K -->
+  <path d="M110 70
+       L110 230
+       L140 230
+       L140 160
+       L190 230
+       L225 230
+       L160 145
+       L225 70
+       L190 70
+       L140 135
+       L140 70 Z" fill="url(#goldGradient)" filter="url(#goldShadow)"></path>
+
+  <!-- Highlight -->
+  <path d="M115 75
+       L115 150
+       L145 135
+       L145 75 Z" fill="url(#shine)" opacity="0.6"></path>
+</svg>
