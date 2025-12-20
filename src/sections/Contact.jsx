@@ -41,16 +41,14 @@ const Contact = () => {
         }
       );
 
-      const data = await response.json();
-
-      if (data.success) {
+      if (response.data.success) {
         setFormData({ name: "", email: "", message: "" });
         showAlertMessage("success", "Message sent successfully!");
       } else {
         showAlertMessage("danger", "Failed to send message!");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
       showAlertMessage("danger", "Something went wrong!");
     } finally {
       setIsLoading(false);
