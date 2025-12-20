@@ -75,7 +75,7 @@ const About = () => {
                 top: "5%",
                 left: "10%",
               }}
-              image="assets/logos/12.png"
+              image="assets/logos/vitejs.svg"
               containerRef={grid2Container}
             />
           </div>
