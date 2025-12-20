@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,12 +31,13 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(
+      const response = await axios.post(
         "https://portfolio-main-jcc4.onrender.com/api/contact",
+        formData,
         {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
 
