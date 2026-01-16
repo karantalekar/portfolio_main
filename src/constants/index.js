@@ -262,7 +262,7 @@ export const experiences = [
   {
     title: "Software Developer",
     job: "MERN Stack Internship",
-    date: "May2025-Dec2025",
+    date: "May 2025 - Dec 2025",
     contents: [
       "Enhanced application security by implementing authentication, authorization, and secure API practices in compliance with industry standards.",
       "Designed and developed interactive and user-friendly interfaces using React.js, improving user experience and enabling seamless data visualization.",
@@ -272,18 +272,18 @@ export const experiences = [
       "Implemented dynamic data visualization and rendering techniques to efficiently display structured data on the frontend.",
     ],
   },
-  // {
-  //   title: "Back-End Developer",
-  //   job: "Car Manufacture",
-  //   date: "2023-2024",
-  //   contents: [
-  //     "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-  //     "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-  //     "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-  //     "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-  //     "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-  //   ],
-  // },
+  {
+    title: "Software Developer",
+    job: "Full Stack Developer",
+    date: "Jan 2026 - Present",
+    contents: [
+      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
+      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
+      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
+      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
+      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+    ],
+  },
   // {
   //   title: "Freelance Developer",
   //   job: "Self-Employed",
