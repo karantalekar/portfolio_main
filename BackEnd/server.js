@@ -60,8 +60,18 @@ import nodemailer from "nodemailer";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://karantalekar.vercel.app",
+    methods: ["POST", "GET"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("✅ Backend is running");
+});
 
 // Brevo SMTP transporter
 const transporter = nodemailer.createTransport({
@@ -116,6 +126,6 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.listen(5000, () =>
+app.listen(process.env.PORT, () =>
   console.log("🚀 Backend running on http://localhost:5000")
 );
