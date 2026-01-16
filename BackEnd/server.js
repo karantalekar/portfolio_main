@@ -60,7 +60,7 @@ import nodemailer from "nodemailer";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+// app.use(cors());
 app.use(
   cors({
     origin: "https://karantalekar.vercel.app",
