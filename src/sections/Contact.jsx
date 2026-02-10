@@ -33,7 +33,7 @@ const Contact = () => {
     try {
       const response = await axios.post(
         // "https://portfolio-main-jcc4.onrender.com/api/contact",
-        "http://localhost:5253/api/send-email",
+        "http://localhost:5000/api/send-email",
         formData,
         {
           headers: {
