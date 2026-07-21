@@ -9,7 +9,7 @@ export const myProjects = [
       "Implemented secure authentication and authorization using JWT and role-based access control for user and admin modules.",
       "Designed a responsive and intuitive frontend with React.js and Tailwind CSS to enhance usability across devices.",
     ],
-    href: "",
+    href: "https://retail-edge-sepia.vercel.app/",
     logo: "",
     image: "/assets/projects/retail_edge.png",
     tags: [
@@ -42,6 +42,133 @@ export const myProjects = [
         id: 6,
         name: "CSS3",
         path: "/assets/logos/css3.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "FlowPilot",
+    description:
+      "FlowPilot, a scalable SaaS workflow automation platform that streamlines task management, team collaboration, and business process tracking through an intuitive, modern interface.",
+    subDescription: [
+      "Developed a scalable SaaS workflow management platform using Next.js, Node.js, Express.js, MongoDB, and Redis to streamline project management and team collaboration.",
+      "Implemented secure JWT-based authentication, role-based access control (RBAC), and RESTful APIs to ensure secure, efficient, and scalable application architecture.",
+      "Designed a responsive, user-centric dashboard with real-time task tracking, workflow automation, and performance optimization using Redis caching and modern React practices.",
+    ],
+    href: "https://flow-pilot-one-bay.vercel.app/",
+    logo: "",
+    image: "/assets/projects/flow-pilot.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next",
+        path: "/assets/logos/next.png",
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.png",
+      },
+      {
+        id: 4,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 5,
+        name: "Redux Toolkit",
+        path: "/assets/logos/redux.png",
+      },
+      {
+        id: 6,
+        name: "Node",
+        path: "/assets/logos/node.svg",
+      },
+      {
+        id: 7,
+        name: "Express",
+        path: "/assets/logos/Express.svg",
+      },
+      {
+        id: 8,
+        name: "MongoDB",
+        path: "/assets/logos/mongoDB.svg",
+      },
+      {
+        id: 9,
+        name: "Redis",
+        path: "/assets/logos/redis.png",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Volunteer Management System",
+    description:
+      "Engineered a role-based Volunteer Management System that enhances organizational efficiency by automating volunteer and event management processes.",
+    subDescription: [
+      "Volunteer Management System is a web-based platform built using the MERN stack to simplify the management of volunteers and community events.",
+      "On the frontend, I used Next.js, React, TypeScript, Redux Toolkit, Tailwind CSS, and shadcn/ui to build a responsive and user-friendly interface.",
+      "On the backend, I used Node.js, Express.js, MongoDB, and JWT Authentication with Role-Based Access Control (RBAC) to secure the application.",
+    ],
+    href: "https://volunteer-management-system-fronten-mocha.vercel.app/",
+    logo: "",
+    image: "/assets/projects/volunteer-management.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next",
+        path: "/assets/logos/next.png",
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.png",
+      },
+      {
+        id: 4,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 5,
+        name: "Redux Toolkit",
+        path: "/assets/logos/redux.png",
+      },
+      {
+        id: 6,
+        name: "Node",
+        path: "/assets/logos/node.svg",
+      },
+      {
+        id: 7,
+        name: "Express",
+        path: "/assets/logos/Express.svg",
+      },
+      {
+        id: 8,
+        name: "MongoDB",
+        path: "/assets/logos/mongoDB.svg",
+      },
+      {
+        id: 9,
+        name: "Redis",
+        path: "/assets/logos/redis.png",
+      },
+      {
+        id: 10,
+        name: "Rechart",
+        path: "/assets/logos/rechart.png",
       },
     ],
   },
