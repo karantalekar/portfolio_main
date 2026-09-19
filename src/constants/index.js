@@ -107,7 +107,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Volunteer Management System",
     description:
       "Engineered a role-based Volunteer Management System that enhances organizational efficiency by automating volunteer and event management processes.",
@@ -399,18 +399,32 @@ export const experiences = [
       "Implemented dynamic data visualization and rendering techniques to efficiently display structured data on the frontend.",
     ],
   },
-  // {
-  //   title: "Software Developer",
-  //   job: "Full Stack Developer",
-  //   date: "March 2026 - Present",
-  //   contents: [
-  //     "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-  //     "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-  //     "Implemented secure APIs, following ISO 26262 automotive safety standards.",
-  //     "Ensured data privacy for customers and partners through industry-compliant protocols.",
-  //     "Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-  //   ],
-  // },
+  {
+    title: "Software Developer",
+    job: "Mern Stack Developer Intern",
+    date: "Nov 2025-Jan 2026",
+    contents: [
+      "Designed and developed responsive frontend features using React.js, following reusable, scalable, and maintainable component-based architecture.",
+      "Designed and managed MongoDB databases for efficient data storage, retrieval, and application-level data management.",
+      "Implemented secure authentication and authorization mechanisms using JWT to protect application resources and manage user access.",
+      "Integrated frontend applications with backend APIs and efficiently managed API responses, application state, and asynchronous operations.",
+      "Performed API testing and debugging using Postman while identifying and resolving frontend-backend integration issues.",
+      "Utilized Git and GitHub for version control, source code management, and collaborative software development.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    job: "Full Stack Developer",
+    date: "March 2026 - Present",
+    contents: [
+      "Developed and enhanced responsive frontend interfaces using React.js, focusing on reusable components, maintainable code, and a consistent user experience.",
+      "Translated business and client requirements into functional and responsive web interfaces.",
+      "Implemented reusable UI components and optimized frontend workflows to improve application maintainability and scalability.",
+      "Collaborated with the development team to troubleshoot frontend issues, resolve integration problems, and deliver application features.",
+      "Worked on a Saudi-based project, gaining practical experience in understanding client requirements and implementing features according to business needs.",
+      "Performed debugging and testing to identify UI, functionality, and API integration issues and ensure reliable application behavior.",
+    ],
+  },
   // {
   //   title: "Freelance Developer",
   //   job: "Self-Employed",

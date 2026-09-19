@@ -1,26 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import React, { useEffect, useRef, useState } from "react";
-
-function MousePosition() {
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  return mousePosition;
-}
+import { useEffect, useRef } from "react";
 
 function hexToRgb(hex) {
   hex = hex.replace("#", "");
@@ -55,19 +34,31 @@ export const Particles = ({
   const canvasContainerRef = useRef(null);
   const context = useRef(null);
   const circles = useRef([]);
-  const mousePosition = MousePosition();
   const mouse = useRef({ x: 0, y: 0 });
   const canvasSize = useRef({ w: 0, h: 0 });
   const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
   const rafID = useRef(null);
+  const isAnimating = useRef(false);
   const resizeTimeout = useRef(null);
+  const lastRefresh = useRef(refresh);
 
   useEffect(() => {
     if (canvasRef.current) {
       context.current = canvasRef.current.getContext("2d");
     }
     initCanvas();
-    animate();
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !isAnimating.current) {
+        isAnimating.current = true;
+        animate();
+      } else if (!entry.isIntersecting && isAnimating.current) {
+        isAnimating.current = false;
+        window.cancelAnimationFrame(rafID.current);
+        rafID.current = null;
+      }
+    });
+    observer.observe(canvasContainerRef.current);
 
     const handleResize = () => {
       if (resizeTimeout.current) {
@@ -79,8 +70,11 @@ export const Particles = ({
     };
 
     window.addEventListener("resize", handleResize);
+    window.addEventListener("mousemove", onMouseMove);
 
     return () => {
+      isAnimating.current = false;
+      observer.disconnect();
       if (rafID.current != null) {
         window.cancelAnimationFrame(rafID.current);
       }
@@ -88,15 +82,15 @@ export const Particles = ({
         clearTimeout(resizeTimeout.current);
       }
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("mousemove", onMouseMove);
     };
   }, [color]);
 
   useEffect(() => {
-    onMouseMove();
-  }, [mousePosition.x, mousePosition.y]);
-
-  useEffect(() => {
-    initCanvas();
+    if (lastRefresh.current !== refresh) {
+      lastRefresh.current = refresh;
+      initCanvas();
+    }
   }, [refresh]);
 
   const initCanvas = () => {
@@ -104,12 +98,12 @@ export const Particles = ({
     drawParticles();
   };
 
-  const onMouseMove = () => {
-    if (canvasRef.current) {
+  const onMouseMove = (event) => {
+    if (canvasRef.current && isAnimating.current) {
       const rect = canvasRef.current.getBoundingClientRect();
       const { w, h } = canvasSize.current;
-      const x = mousePosition.x - rect.left - w / 2;
-      const y = mousePosition.y - rect.top - h / 2;
+      const x = event.clientX - rect.left - w / 2;
+      const y = event.clientY - rect.top - h / 2;
       const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
       if (inside) {
         mouse.current.x = x;
@@ -129,12 +123,7 @@ export const Particles = ({
       canvasRef.current.style.height = `${canvasSize.current.h}px`;
       context.current.scale(dpr, dpr);
 
-      // Clear existing particles and create new ones with exact quantity
       circles.current = [];
-      for (let i = 0; i < quantity; i++) {
-        const circle = circleParams();
-        drawCircle(circle);
-      }
     }
   };
 
@@ -254,7 +243,9 @@ export const Particles = ({
         drawCircle(newCircle);
       }
     });
-    rafID.current = window.requestAnimationFrame(animate);
+    if (isAnimating.current) {
+      rafID.current = window.requestAnimationFrame(animate);
+    }
   };
 
   return (

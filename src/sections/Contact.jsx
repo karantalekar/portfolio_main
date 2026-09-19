@@ -58,14 +58,14 @@ const Contact = () => {
 
   return (
     <section
-      className="relative flex items-center c-space section-spacing"
+      className="relative mx-auto flex w-full max-w-7xl items-center c-space section-spacing py-12 md:py-20"
       id="contact"
     >
       <Particles className="absolute inset-0 -z-50" quantity={100} />
 
       {showAlert && <Alert type={alertType} text={alertMessage} />}
 
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
+      <div className="flex w-full max-w-md flex-col items-center justify-center p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">

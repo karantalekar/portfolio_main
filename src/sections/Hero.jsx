@@ -11,14 +11,13 @@ import Loader from "../components/Loader";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
+    <section id="top" className="relative isolate flex min-h-[100svh] items-start justify-center overflow-hidden md:justify-start c-space">
       <HeroText />
       <ParallaxBackground />
       <figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
+        className="pointer-events-none absolute inset-0 h-full w-full"
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
+        <Canvas camera={{ position: [0, 1, 3] }} dpr={[1, 1.5]} gl={{ antialias: false }}>
           <Suspense fallback={<Loader />}>
             <Float>
               <Astronaut
