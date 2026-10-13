@@ -117,7 +117,7 @@ export const myProjects = [
       "Containerized the backend, MongoDB, and Redis using Docker Compose to simplify setup and maintain consistent environments.",
       "Implemented service health checks and structured request logging to track response times, monitor availability, and streamline troubleshooting.",
     ],
-    href: "", // Add your Tasko frontend URL
+    href: "https://tasko-kohl-eta.vercel.app/",
     logo: "",
     image: "/assets/projects/Tasko.png",
     tags: [
