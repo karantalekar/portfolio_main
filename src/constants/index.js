@@ -415,7 +415,7 @@ export const experiences = [
   {
     title: "Software Developer",
     job: "Full Stack Developer",
-    date: "March 2026 - Present",
+    date: "March 2026 - Oct 2026",
     contents: [
       "Developed and enhanced responsive frontend interfaces using React.js, focusing on reusable components, maintainable code, and a consistent user experience.",
       "Translated business and client requirements into functional and responsive web interfaces.",
@@ -425,15 +425,15 @@ export const experiences = [
       "Performed debugging and testing to identify UI, functionality, and API integration issues and ensure reliable application behavior.",
     ],
   },
-  // {
-  //   title: "Freelance Developer",
-  //   job: "Self-Employed",
-  //   date: "2025-Present",
-  //   contents: [
-  //     "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-  //     "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
-  //   ],
-  // },
+  {
+    title: "Web Developer",
+    job: "Full Stack Developer",
+    date: "Oct 2026 - Present",
+    contents: [
+      "Created a personal portfolio using  React, Vite, and WebAPI to showcase technical expertise.",
+      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+    ],
+  },
 ];
 
 export const reviews = [
