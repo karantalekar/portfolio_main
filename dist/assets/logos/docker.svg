@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="docker-title">
+  <title id="docker-title">Docker</title>
+  <g fill="#2496ED">
+    <path d="M8 57h16v14H8zM27 57h16v14H27zM46 57h16v14H46zM65 57h16v14H65zM84 57h16v14H84zM27 40h16v14H27zM46 40h16v14H46zM65 40h16v14H65zM65 23h16v14H65z"/>
+    <path d="M126 59c-6-4-13-4-19-2-1-7-5-12-10-16l-3-2-2 4c-3 7-2 15 2 21-4 3-10 5-18 5H4l-1 4c-1 12 3 24 12 32 8 7 20 10 34 10 31 0 56-15 65-43 6 0 11-3 14-9l-2-4Z"/>
+  </g>
+  <circle cx="23" cy="83" r="3" fill="#fff"/>
+</svg>

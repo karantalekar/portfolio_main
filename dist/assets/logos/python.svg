@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="python-title">
+  <title id="python-title">Python</title>
+  <defs>
+    <linearGradient id="python-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#387EB8"/>
+      <stop offset="1" stop-color="#366994"/>
+    </linearGradient>
+    <linearGradient id="python-yellow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFE873"/>
+      <stop offset="1" stop-color="#FFD43B"/>
+    </linearGradient>
+  </defs>
+  <path d="M63 6C35 6 37 18 37 18v13h27v4H26S8 33 8 61s16 27 16 27h10V74s-1-16 16-16h27s15 0 15-15V20S94 6 63 6Z" fill="url(#python-blue)"/>
+  <circle cx="49" cy="20" r="4" fill="#fff"/>
+  <path d="M65 122c28 0 26-12 26-12V97H64v-4h38s18 2 18-26-16-27-16-27H94v14s1 16-16 16H51s-15 0-15 15v23s-2 14 29 14Z" fill="url(#python-yellow)"/>
+  <circle cx="79" cy="108" r="4" fill="#fff"/>
+</svg>
