@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="fastapi-title">
+  <title id="fastapi-title">FastAPI</title>
+  <circle cx="64" cy="64" r="64" fill="#009688"/>
+  <path d="M72 16 34 70h25l-3 42 38-54H69z" fill="#fff"/>
+</svg>

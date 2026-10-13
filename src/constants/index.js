@@ -46,7 +46,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 2,
     title: "FlowPilot",
     description:
       "FlowPilot, a scalable SaaS workflow automation platform that streamlines task management, team collaboration, and business process tracking through an intuitive, modern interface.",
@@ -107,7 +107,59 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
+    title: "Tasko — Team Management Platform",
+    description:
+      "Developed a team management platform with authenticated workflows, a modular FastAPI backend, and containerized services for consistent development and deployment.",
+    subDescription: [
+      "Implemented user authentication, session management, and team management APIs to support collaborative workflows.",
+      "Built REST APIs using Python and FastAPI, with MongoDB for persistent data storage and Redis integration.",
+      "Containerized the backend, MongoDB, and Redis using Docker Compose to simplify setup and maintain consistent environments.",
+      "Implemented service health checks and structured request logging to track response times, monitor availability, and streamline troubleshooting.",
+    ],
+    href: "", // Add your Tasko frontend URL
+    logo: "",
+    image: "/assets/projects/Tasko.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next",
+        path: "/assets/logos/next.png",
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 4,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 5,
+        name: "MongoDB",
+        path: "/assets/logos/mongoDB.svg",
+      },
+      {
+        id: 6,
+        name: "Redis",
+        path: "/assets/logos/redis.png",
+      },
+      {
+        id: 7,
+        name: "Docker",
+        path: "/assets/logos/docker.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
     title: "Volunteer Management System",
     description:
       "Engineered a role-based Volunteer Management System that enhances organizational efficiency by automating volunteer and event management processes.",
@@ -173,7 +225,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "Task Manager ",
     description:
       "Task Manager is a web app that helps users efficiently create, track, and manage tasks with a responsive React frontend and secure backend.",
@@ -214,7 +266,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: "AI Code Reviewer",
     description:
       "AI Code Reviewer is a web app that provides intelligent code analysis using React, Node.js, Express, and Google Gemini API.",
