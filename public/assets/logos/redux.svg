@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 168 148" role="img" aria-labelledby="redux-title">
+  <title id="redux-title">Redux</title>
+  <g fill="none" stroke="#764ABC" stroke-width="8">
+    <path d="M114 52C109 24 95 12 80 16 59 20 48 39 49 62 49 79 55 93 64 102"/>
+    <path d="M75 60C100 55 126 65 139 82 152 98 153 112 142 123 131 135 113 136 96 130"/>
+    <path d="M39 74C22 87 18 100 24 114 31 132 49 136 69 130 87 125 101 110 109 90"/>
+  </g>
+  <g fill="#764ABC">
+    <circle cx="64" cy="102" r="9.5"/>
+    <circle cx="75" cy="60" r="9.5"/>
+    <circle cx="109" cy="90" r="9.5"/>
+  </g>
+</svg>

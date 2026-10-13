@@ -82,7 +82,7 @@ export const myProjects = [
       {
         id: 5,
         name: "Redux Toolkit",
-        path: "/assets/logos/redux.png",
+        path: "/assets/logos/redux.svg",
       },
       {
         id: 6,
@@ -195,7 +195,7 @@ export const myProjects = [
       {
         id: 5,
         name: "Redux Toolkit",
-        path: "/assets/logos/redux.png",
+        path: "/assets/logos/redux.svg",
       },
       {
         id: 6,
